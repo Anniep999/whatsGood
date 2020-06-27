@@ -1,16 +1,35 @@
 <! DOCTYPE html> <!-- tell what kinds of elements browser should expect -->
 <html>
+		<script>
+			function showInput() {
+				document.getElementById("fl").innerHTML = "You are listening to " + document.myform.input.value;
+			}
+		</script>
+
 	<head>
 		<title>What's Good</title> <!-- shows up on tab -->
 	</head>
 	<body> <!-- actual content-->
 		<header>What's Good</header>
 		<section>Add things here</section>
+
+		<form name = "myform">
+		<p> What have you been listening to lately? 
+			<input type="text" name="input" value = "" >
+			<p>
+			<input type= "submit" onclick="showInput(); return false">
+			</p>
+		</p>
+		</form>
+
+		<p id = "fl"> </p>
+
 		<label for= "songNames">What have you been listening to lately?</label>
 		<input type = "text"
 				id = "songNames"
 				name = "songNames"> 
 		<button onclick* "sendSongName()">Enter </button>
+
 		<footer>Ending things here</footer>
 	</body>
 </html>
