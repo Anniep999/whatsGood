@@ -1,6 +1,11 @@
+body {
+	background-color: #D2EAED;
+}
+
 header {
 	background-color: #35848E;
 	font-size: 50px;
+	
 	color: #FFFFFF;
 	padding-bottom: 40px;
 	text-align: center;
