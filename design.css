@@ -12,3 +12,10 @@ header {
 	/*width: 500 px;
 	margin: 0 auto;*/
 }
+
+#question {
+	font-size: 30px;
+	font-family: Galvji;
+	color: #1D4A50;
+	text-align: center;
+}
