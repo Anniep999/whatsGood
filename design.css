@@ -33,3 +33,13 @@ header {
 	color: #1D4A50;
 	text-align: center;
 }
+
+#myRecentActivity{
+	padding: 15px;
+	width: 325px;
+	height: 40px;
+	background-color: #72BEC7;
+	font-size: 30px;
+	font-family: Galvji;
+	color: #FFFFFF;
+}
