@@ -43,3 +43,13 @@ header {
 	font-family: Galvji;
 	color: #FFFFFF;
 }
+
+#submitButton {
+	font-family: Galvji;
+	background-color: #72BEC7;
+	color: white;
+	border-radius: 5px;
+	border-color: #FFFFFF;
+	padding: 3px;
+	margin-top: 5px;
+}
