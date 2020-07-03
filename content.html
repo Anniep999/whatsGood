@@ -1,10 +1,13 @@
 <! DOCTYPE html> <!-- tell what kinds of elements browser should expect -->
 <html>
+
+<!--
 		<script>
 			function showInput() {
 				document.getElementById("fl").innerHTML = "You are listening to " + document.myform.input.value;
 			}
 		</script>
+-->
 
 	<head>
 		<title>What's Good</title> <!-- shows up on tab -->
@@ -13,7 +16,7 @@
 	<body> <!-- actual content-->
 		<header>What's Good</header>
 		<section></section>
-
+<!-- 
 		<form name = "myform">
 		<p> What have you been listening to lately? <br></br>
 			<input type="text" name="input" value = "" >
@@ -24,13 +27,53 @@
 		</form>
 
 		<p id = "fl"> </p>
-<!-- 
+
 		<label for= "songNames">What have you been listening to lately?</label>
 		<input type = "text"
 				id = "songNames"
 				name = "songNames"> 
 		<button onclick* "sendSongName()">Enter </button>
 -->
+		<script>
+			function showInput() {
+				document.getElementById("fl").innerHTML = "You are listening to " + document.myform.input.value;
+			}
+		</script>
+
+		<br>
+		<form name = "myform">
+		<p id = "fl">
+			<div>
+				<label>
+					What have you been listening to lately?
+					<input type= "text" name="songName">
+				</label>
+			</div>
+		</p>
+		<br>
+		<div id = "rating">
+			<label>
+				Rate the song (1-5)
+				<select id="rating" name="rating">
+				  <option value="Select One">select one</option>
+				  <option value="1">1</option>
+				  <option value="2">2</option>
+				  <option value="3">3</option>
+				  <option value="4">4</option>
+				  <option value="5">5</option>
+				</select>
+			</label>
+		</div>
+		<br>
+		<div id = "comment">
+			<label>
+				Comments
+				<input type= "text" name="comment">
+			</label>
+		</div>
+		<input type= "submit" onclick="showInput(); return false">
+		</form>
+
 		<footer>Ending things here</footer>
 	</body>
 </html>
