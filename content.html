@@ -1,55 +1,33 @@
 <! DOCTYPE html> <!-- tell what kinds of elements browser should expect -->
 <html>
+	<script src= "action.js" type="text/javascript">
+	</script>
 
-<!--
-		<script>
-			function showInput() {
-				document.getElementById("fl").innerHTML = "You are listening to " + document.myform.input.value;
-			}
-		</script>
--->
 
 	<head>
 		<title>What's Good</title> <!-- shows up on tab -->
 		<link rel="stylesheet" href="design.css"/> <!-- link html to css -->
 	</head>
 	<body> <!-- actual content-->
+
 		<header>What's Good</header>
 		<section></section>
-<!-- 
-		<form name = "myform">
-		<p> What have you been listening to lately? <br></br>
-			<input type="text" name="input" value = "" >
-			<p>
-			<input type= "submit" onclick="showInput(); return false">
-			</p>
-		</p>
-		</form>
 
-		<p id = "fl"> </p>
+		<header><div id="whats">What's</div><br></br><div id = "good">Good</div></header>
+		<section id="main">
 
-		<label for= "songNames">What have you been listening to lately?</label>
-		<input type = "text"
-				id = "songNames"
-				name = "songNames"> 
-		<button onclick* "sendSongName()">Enter </button>
--->
-		<script>
-			function showInput() {
-				document.getElementById("fl").innerHTML = "You are listening to " + document.myform.input.value;
-			}
-		</script>
-
+<!-- USER INPUT FORM -->
 		<br>
 		<form name = "myform">
-		<p id = "fl">
-			<div>
+		
+			<div id = "question">
 				<label>
 					What have you been listening to lately?
-					<input type= "text" name="songName">
+					<input type= "text" name="input">
 				</label>
 			</div>
-		</p>
+		<br>
+<!-- TRYING TO DO SELECT OPTION FOR RATING 
 		<br>
 		<div id = "rating">
 			<label>
@@ -65,15 +43,43 @@
 			</label>
 		</div>
 		<br>
-		<div id = "comment">
+-->
+	
+		<div id = "question">
 			<label>
 				Comments
 				<input type= "text" name="comment">
 			</label>
 		</div>
-		<input type= "submit" onclick="showInput(); return false">
+		<br>
+			<div id = "question">
+				<label>
+					What would you rate this song? (1-5)
+					<input type= "text" name="rating">
+				</label>
+			</div>
+			
 		</form>
+<!-- SUBMIT BUTTON (FIX DESIGN) -->
+			<input type= "submit" onclick="showInput(); return false">
 
-		<footer>Ending things here</footer>
+		</div>
+
 	</body>
+
+<!-- DISPLAYING RESULTS -->
+
+		</section>
+		<br>
+		<section id="myRecentActivity">
+			<div id="title">&#127925; My Recent Activity</div><br></br>
+		</section>
+		<p id = results1>  </p>
+		<p id = results2>  </p>
+		<p id = results3>  </p>
+
+
+
+<footer>Ending things here</footer>
+		
 </html>
