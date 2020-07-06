@@ -46,7 +46,7 @@ function addElementToRatingArray() {
 
 function displaySongNameArray() {
 	var output = "";
-	for (var i = 0; i < songNameArray.length; i++) {
+	for (var i = songNameArray.length - 1; i >= 0; i--) {
 		output +=  "Element " + i + " = " + songNameArray[i] + "<br/>";
 	}
 	document.getElementById("results1").innerHTML = output;
@@ -54,7 +54,7 @@ function displaySongNameArray() {
 
 function displayCommentArray() {
 	var output = "";
-	for (var i = 0; i < commentArray.length; i++) {
+	for (var i = commentArray.length - 1; i >= 0; i--) {
 		output +=  "Element " + i + " = " + commentArray[i] + "<br/>";
 	}
 	document.getElementById("results2").innerHTML = output;
@@ -62,7 +62,7 @@ function displayCommentArray() {
 
 function displayRatingArray() {
 	var output = "";
-	for (var i = 0; i < ratingArray.length; i++) {
+	for (var i = ratingArray.length - 1; i >= 0; i--) {
 		output +=  "Element " + i + " = " + ratingArray[i] + "<br/>";
 	}
 	document.getElementById("results3").innerHTML = output;

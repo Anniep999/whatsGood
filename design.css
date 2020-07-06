@@ -34,7 +34,7 @@ header {
 	text-align: center;
 }
 
-#myRecentActivity{
+#myRecentActivityTitle {
 	padding: 15px;
 	width: 325px;
 	height: 40px;
@@ -42,6 +42,12 @@ header {
 	font-size: 30px;
 	font-family: Galvji;
 	color: #FFFFFF;
+}
+
+#myRecentActivityBody {
+	width: 700px;
+	font-family: Galvji;
+	font-size: 15px;
 }
 
 #submitButton {
@@ -52,4 +58,10 @@ header {
 	border-color: #FFFFFF;
 	padding: 3px;
 	margin-top: 5px;
+}
+
+.columns {
+	display: inline-block;
+	vertical-align: top;
+	padding: 10px;
 }
