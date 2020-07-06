@@ -4,7 +4,7 @@ function showInput()
 		var userComment = document.myform.comment.value;
 		var userRating = document.myform.rating.value;
 
-		document.getElementById("results1").innerHTML = "You are listening to " + songName;
+		document.getElementById("results1").innerHTML = "You listened to " + songName;
 		document.getElementById("results2").innerHTML = "Comments: " + userComment;
 		document.getElementById("results3").innerHTML = "Rating (1-5): " + userRating;
 
